@@ -18,3 +18,4 @@ files:
               root   /usr/share/nginx/html;
           }
       }
+ 
