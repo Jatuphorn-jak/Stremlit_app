@@ -14,7 +14,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 RUN pip install --upgrade pip && \
-    pip install numpy==1.21.6 && \
+    pip install numpy==2.2.5 && \
     pip install --no-cache-dir -r requirements.txt
 
 COPY . .
