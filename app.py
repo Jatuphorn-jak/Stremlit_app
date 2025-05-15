@@ -4,7 +4,7 @@ import numpy as np
 #import pickle
 import joblib
 from sklearn.linear_model import LinearRegression
-
+print(np.__version__)
 # Load the trained model
 with open("model.pkl", "rb") as f:
     model = joblib.load(f)
