@@ -1,14 +1,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-#import pickle
-import joblib
+import pickle
 from sklearn.linear_model import LinearRegression
-print(np.__version__)
+
 # Load the trained model
 with open("model.pkl", "rb") as f:
-    model = joblib.load(f)
-    
+    model = pickle.load(f)
 
 # Set page configuration
 st.set_page_config(page_title="ML Prediction App", layout="wide")
